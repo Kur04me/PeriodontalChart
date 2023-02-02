@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "BIZ UDPGothic";
+  font-size: 12px;
+}
+
+h1 {
+  margin: 10px 0px;
+}
+
+#title {
+  text-align: left;
+  height: 30px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+#content_wrap {
+  width: fit-content;
+  position: relative;
+  margin: 50px auto;
+}
+
+#maxilla_b,
+#maxilla_p,
+#mandibular_l,
+#mandibular_b {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  margin: 20px 0px;
+}
+
+#maxilla_b_label,
+#maxilla_p_label,
+#mandibular_l_label,
+#mandibular_b_label {
+  text-align: right;
+  margin: 0px 5px 0px 0px;
+  vertical-align: bottom;
+  line-height: 16px;
+}
+
+/* Chart関連 */
+#maxilla_b_chart {
+  z-index: 1;
+  width: 575px;
+  height: 86px;
+  position: absolute;
+  top: 0px;
+  left: 70px;
+}
+
+.axis-x,
+.tick text,
+.axis-y path {
+  display: none;
+}
+
+.axis-y > .tick {
+  opacity: 0.6;
+}
+
+.axis-y > .tick:nth-child(10),
+.axis-y > .tick:nth-child(5) {
+  color: red;
+}
+
+#maxilla_b_chart > svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* 歯牙SVG */
+.teeth_svg {
+  position: relative;
+}
+
+#maxilla_b img,
+#maxilla_p img {
+  position: absolute;
+  bottom: 0px;
+}
+
+#mandibular_l img,
+#mandibular_b img {
+  position: absolute;
+  top: 0px;
+}
+
+#occlusal > img {
+  height: 120px;
+  position: relative;
+  right: 20px;
+}
+
+#occlusal {
+  text-align: right;
+  padding: 10px 0px;
+}
+
+/* 表 */
+.pod_wrap,
+.margin_wrap,
+.mgj_wrap,
+.mobility_wrap {
+  height: 15px;
+  width: calc(100%+1);
+  border: 1px #000000 solid;
+  margin-bottom: -1px;
+  margin-right: -1px;
+}
+
+.pod_wrap,
+.margin_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mgj_wrap,
+.mobility_wrap {
+  text-align: center;
+}
+
+.mgj,
+.mobility {
+  width: 90%;
+  height: 11px;
+}
+
+.pod_d,
+.pod_c,
+.pod_m,
+.margin_d,
+.margin_c,
+.margin_m {
+  font-size: 9px;
+  width: 30%;
+  line-height: 15px;
+}
+
+input {
+  vertical-align: middle;
+  border: 0px;
+  text-align: center;
+  line-height: 15px;
+}
+
+.teeth_svg {
+  height: 130px;
+}
+
+.teeth_svg > img {
+  height: 120px;
+  margin: 5px 0px;
+}
+
+/* SVGの横幅に合わせる */
+
+#teeth_wrap_18_b,
+#teeth_wrap_28_b {
+  width: calc(9.76px * 4);
+}
+#teeth_wrap_17_b,
+#teeth_wrap_27_b {
+  width: calc(10.6px * 4);
+}
+#teeth_wrap_16_b,
+#teeth_wrap_26_b {
+  width: calc(12.1px * 4);
+}
+#teeth_wrap_15_b,
+#teeth_wrap_25_b {
+  width: calc(7.8px * 4);
+}
+#teeth_wrap_14_b,
+#teeth_wrap_24_b {
+  width: calc(7.6px * 4);
+}
+#teeth_wrap_13_b,
+#teeth_wrap_23_b {
+  width: calc(7.8px * 4);
+}
+#teeth_wrap_12_b,
+#teeth_wrap_22_b {
+  width: calc(6.5px * 4);
+}
+#teeth_wrap_11_b,
+#teeth_wrap_21_b {
+  width: calc(8.9px * 4);
+}
+
+#teeth_wrap_18_p,
+#teeth_wrap_28_p {
+  width: calc(8.670619px * 4);
+}
+#teeth_wrap_17_p,
+#teeth_wrap_27_p {
+  width: calc(11.041983px * 4);
+}
+#teeth_wrap_16_p,
+#teeth_wrap_26_p {
+  width: calc(12.030693px * 4);
+}
+#teeth_wrap_15_p,
+#teeth_wrap_25_p {
+  width: calc(7.3504796px * 4);
+}
+#teeth_wrap_14_p,
+#teeth_wrap_24_p {
+  width: calc(7.5510583px * 4);
+}
+#teeth_wrap_13_p,
+#teeth_wrap_23_p {
+  width: calc(8.1467457px * 4);
+}
+#teeth_wrap_12_p,
+#teeth_wrap_22_p {
+  width: calc(7.1377625px * 4);
+}
+#teeth_wrap_11_p,
+#teeth_wrap_21_p {
+  width: calc(8.2808189px * 4);
+}
+
+#teeth_wrap_38_l,
+#teeth_wrap_48_l {
+  width: calc(11.134898px * 4);
+}
+#teeth_wrap_37_l,
+#teeth_wrap_47_l {
+  width: calc(12.487567px * 4);
+}
+#teeth_wrap_36_l,
+#teeth_wrap_46_l {
+  width: calc(12.989593px * 4);
+}
+#teeth_wrap_35_l,
+#teeth_wrap_45_l {
+  width: calc(7.9666262px * 4);
+}
+#teeth_wrap_34_l,
+#teeth_wrap_44_l {
+  width: calc(7.7054358px * 4);
+}
+#teeth_wrap_33_l,
+#teeth_wrap_43_l {
+  width: calc(7.9587064px * 4);
+}
+#teeth_wrap_32_l,
+#teeth_wrap_42_l {
+  width: calc(6.2144394px * 4);
+}
+#teeth_wrap_31_l,
+#teeth_wrap_41_l {
+  width: calc(4.9711394px * 4);
+}
+
+#teeth_wrap_38_b,
+#teeth_wrap_48_b {
+  width: calc(11.485284px * 4);
+}
+#teeth_wrap_37_b,
+#teeth_wrap_47_b {
+  width: calc(12.477056px * 4);
+}
+#teeth_wrap_36_b,
+#teeth_wrap_46_b {
+  width: calc(13.48271px * 4);
+}
+#teeth_wrap_35_b,
+#teeth_wrap_45_b {
+  width: calc(8.0735016px * 4);
+}
+#teeth_wrap_34_b,
+#teeth_wrap_44_b {
+  width: calc(8.1504173px * 4);
+}
+#teeth_wrap_33_b,
+#teeth_wrap_43_b {
+  width: calc(7.6021624px * 4);
+}
+#teeth_wrap_32_b,
+#teeth_wrap_42_b {
+  width: calc(5.948px * 4);
+}
+#teeth_wrap_31_b,
+#teeth_wrap_41_b {
+  width: calc(5.10221px * 4);
+}
+
+/* SVGを反転させる */
+.flip_horizontal {
+  transform: scale(-1, 1);
+}

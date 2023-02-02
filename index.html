@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Periodontal Chart Generator</title>
+    <meta charset="uft-8" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="content_wrap">
+      <div id="header">
+        <h1>Periodontal chart</h1>
+        Date : <input />&emsp;&emsp;Name : <input />
+      </div>
+
+      <div id="maxilla_b">
+        <div id="maxilla_b_label">POD<br />Recession<br />MM<br />Mobility</div>
+        <div id="maxilla_b_chart">
+          <canvas
+            id="canvas_maxilla_b"
+            aria-label="canvas_maxilla_b"
+            role="chart"
+          ></canvas>
+        </div>
+        <div id="teeth_wrap_18_b">
+          <div class="teeth_svg"><img src="./files/maxilla_b_8.svg" /></div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mgj_wrap">
+            <input class="mgj" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mobility_wrap">
+            <input class="mobility" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_17_b">
+          <div class="teeth_svg"><img src="./files/maxilla_b_7.svg" /></div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mgj_wrap">
+            <input class="mgj" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mobility_wrap">
+            <input class="mobility" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_16_b">
+          <div class="teeth_svg"><img src="./files/maxilla_b_6.svg" /></div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mgj_wrap">
+            <input class="mgj" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mobility_wrap">
+            <input class="mobility" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_15_b">
+          <div class="teeth_svg"><img src="./files/maxilla_b_5.svg" /></div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mgj_wrap">
+            <input class="mgj" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mobility_wrap">
+            <input class="mobility" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_14_b">
+          <div class="teeth_svg"><img src="./files/maxilla_b_4.svg" /></div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mgj_wrap">
+            <input class="mgj" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mobility_wrap">
+            <input class="mobility" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_13_b">
+          <div class="teeth_svg"><img src="./files/maxilla_b_3.svg" /></div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mgj_wrap">
+            <input class="mgj" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mobility_wrap">
+            <input class="mobility" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_12_b">
+          <div class="teeth_svg"><img src="./files/maxilla_b_2.svg" /></div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mgj_wrap">
+            <input class="mgj" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mobility_wrap">
+            <input class="mobility" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_11_b">
+          <div class="teeth_svg"><img src="./files/maxilla_b_1.svg" /></div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mgj_wrap">
+            <input class="mgj" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mobility_wrap">
+            <input class="mobility" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_21_b">
+          <div class="teeth_svg">
+            <img src="./files/maxilla_b_1.svg" class="flip_horizontal" />
+          </div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mgj_wrap">
+            <input class="mgj" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mobility_wrap">
+            <input class="mobility" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_22_b">
+          <div class="teeth_svg">
+            <img src="./files/maxilla_b_2.svg" class="flip_horizontal" />
+          </div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mgj_wrap">
+            <input class="mgj" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mobility_wrap">
+            <input class="mobility" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_23_b">
+          <div class="teeth_svg">
+            <img src="./files/maxilla_b_3.svg" class="flip_horizontal" />
+          </div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mgj_wrap">
+            <input class="mgj" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mobility_wrap">
+            <input class="mobility" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_24_b">
+          <div class="teeth_svg">
+            <img src="./files/maxilla_b_4.svg" class="flip_horizontal" />
+          </div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mgj_wrap">
+            <input class="mgj" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mobility_wrap">
+            <input class="mobility" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_25_b">
+          <div class="teeth_svg">
+            <img src="./files/maxilla_b_5.svg" class="flip_horizontal" />
+          </div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mgj_wrap">
+            <input class="mgj" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mobility_wrap">
+            <input class="mobility" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_26_b">
+          <div class="teeth_svg">
+            <img src="./files/maxilla_b_6.svg" class="flip_horizontal" />
+          </div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mgj_wrap">
+            <input class="mgj" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mobility_wrap">
+            <input class="mobility" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_27_b">
+          <div class="teeth_svg">
+            <img src="./files/maxilla_b_7.svg" class="flip_horizontal" />
+          </div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mgj_wrap">
+            <input class="mgj" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mobility_wrap">
+            <input class="mobility" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_28_b">
+          <div class="teeth_svg">
+            <img src="./files/maxilla_b_8.svg" class="flip_horizontal" />
+          </div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mgj_wrap">
+            <input class="mgj" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mobility_wrap">
+            <input class="mobility" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+      </div>
+
+      <div id="maxilla_p">
+        <div id="maxilla_p_label">POD<br />Recession</div>
+        <div id="maxilla_p_chart"></div>
+        <div id="teeth_wrap_18_p">
+          <div class="teeth_svg"><img src="./files/maxilla_p_8.svg" /></div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_17_p">
+          <div class="teeth_svg"><img src="./files/maxilla_p_7.svg" /></div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_16_p">
+          <div class="teeth_svg"><img src="./files/maxilla_p_6.svg" /></div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_15_p">
+          <div class="teeth_svg"><img src="./files/maxilla_p_5.svg" /></div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_14_p">
+          <div class="teeth_svg"><img src="./files/maxilla_p_4.svg" /></div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_13_p">
+          <div class="teeth_svg"><img src="./files/maxilla_p_3.svg" /></div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_12_p">
+          <div class="teeth_svg"><img src="./files/maxilla_p_2.svg" /></div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_11_p">
+          <div class="teeth_svg"><img src="./files/maxilla_p_1.svg" /></div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_21_p">
+          <div class="teeth_svg">
+            <img src="./files/maxilla_p_1.svg" class="flip_horizontal" />
+          </div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_22_p">
+          <div class="teeth_svg">
+            <img src="./files/maxilla_p_2.svg" class="flip_horizontal" />
+          </div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_23_p">
+          <div class="teeth_svg">
+            <img src="./files/maxilla_p_3.svg" class="flip_horizontal" />
+          </div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_24_p">
+          <div class="teeth_svg">
+            <img src="./files/maxilla_p_4.svg" class="flip_horizontal" />
+          </div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_25_p">
+          <div class="teeth_svg">
+            <img src="./files/maxilla_p_5.svg" class="flip_horizontal" />
+          </div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_26_p">
+          <div class="teeth_svg">
+            <img src="./files/maxilla_p_6.svg" class="flip_horizontal" />
+          </div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_27_p">
+          <div class="teeth_svg">
+            <img src="./files/maxilla_p_7.svg" class="flip_horizontal" />
+          </div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_28_p">
+          <div class="teeth_svg">
+            <img src="./files/maxilla_p_8.svg" class="flip_horizontal" />
+          </div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+      </div>
+
+      <div id="occlusal"><img src="./files/occlusal.svg" /></div>
+
+      <div id="mandibular_l">
+        <div id="mandibular_l_label">POD<br />Recession</div>
+        <div id="mandibular_l_chart"></div>
+        <div id="teeth_wrap_48_l">
+          <div class="teeth_svg"><img src="./files/mandibular_l_8.svg" /></div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_47_l">
+          <div class="teeth_svg"><img src="./files/mandibular_l_7.svg" /></div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_46_l">
+          <div class="teeth_svg"><img src="./files/mandibular_l_6.svg" /></div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_45_l">
+          <div class="teeth_svg"><img src="./files/mandibular_l_5.svg" /></div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_44_l">
+          <div class="teeth_svg"><img src="./files/mandibular_l_4.svg" /></div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_43_l">
+          <div class="teeth_svg"><img src="./files/mandibular_l_3.svg" /></div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_42_l">
+          <div class="teeth_svg"><img src="./files/mandibular_l_2.svg" /></div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_41_l">
+          <div class="teeth_svg"><img src="./files/mandibular_l_1.svg" /></div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_31_l">
+          <div class="teeth_svg">
+            <img src="./files/mandibular_l_1.svg" class="flip_horizontal" />
+          </div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_32_l">
+          <div class="teeth_svg">
+            <img src="./files/mandibular_l_2.svg" class="flip_horizontal" />
+          </div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_33_l">
+          <div class="teeth_svg">
+            <img src="./files/mandibular_l_3.svg" class="flip_horizontal" />
+          </div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_34_l">
+          <div class="teeth_svg">
+            <img src="./files/mandibular_l_4.svg" class="flip_horizontal" />
+          </div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_35_l">
+          <div class="teeth_svg">
+            <img src="./files/mandibular_l_5.svg" class="flip_horizontal" />
+          </div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_36_l">
+          <div class="teeth_svg">
+            <img src="./files/mandibular_l_6.svg" class="flip_horizontal" />
+          </div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_37_l">
+          <div class="teeth_svg">
+            <img src="./files/mandibular_l_7.svg" class="flip_horizontal" />
+          </div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_38_l">
+          <div class="teeth_svg">
+            <img src="./files/mandibular_l_8.svg" class="flip_horizontal" />
+          </div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+      </div>
+
+      <div id="mandibular_b">
+        <div id="mandibular_b_label">
+          POD<br />Recession<br />MM<br />Mobility
+        </div>
+        <div id="mandibular_b_chart"></div>
+        <div id="teeth_wrap_48_b">
+          <div class="teeth_svg"><img src="./files/mandibular_b_8.svg" /></div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mgj_wrap">
+            <input class="mgj" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mobility_wrap">
+            <input class="mobility" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_47_b">
+          <div class="teeth_svg"><img src="./files/mandibular_b_7.svg" /></div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mgj_wrap">
+            <input class="mgj" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mobility_wrap">
+            <input class="mobility" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_46_b">
+          <div class="teeth_svg"><img src="./files/mandibular_b_6.svg" /></div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mgj_wrap">
+            <input class="mgj" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mobility_wrap">
+            <input class="mobility" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_45_b">
+          <div class="teeth_svg"><img src="./files/mandibular_b_5.svg" /></div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mgj_wrap">
+            <input class="mgj" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mobility_wrap">
+            <input class="mobility" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_44_b">
+          <div class="teeth_svg"><img src="./files/mandibular_b_4.svg" /></div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mgj_wrap">
+            <input class="mgj" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mobility_wrap">
+            <input class="mobility" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_43_b">
+          <div class="teeth_svg"><img src="./files/mandibular_b_3.svg" /></div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mgj_wrap">
+            <input class="mgj" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mobility_wrap">
+            <input class="mobility" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_42_b">
+          <div class="teeth_svg"><img src="./files/mandibular_b_2.svg" /></div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mgj_wrap">
+            <input class="mgj" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mobility_wrap">
+            <input class="mobility" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_41_b">
+          <div class="teeth_svg"><img src="./files/mandibular_b_1.svg" /></div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mgj_wrap">
+            <input class="mgj" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mobility_wrap">
+            <input class="mobility" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_31_b">
+          <div class="teeth_svg">
+            <img src="./files/mandibular_b_1.svg" class="flip_horizontal" />
+          </div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mgj_wrap">
+            <input class="mgj" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mobility_wrap">
+            <input class="mobility" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_32_b">
+          <div class="teeth_svg">
+            <img src="./files/mandibular_b_2.svg" class="flip_horizontal" />
+          </div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mgj_wrap">
+            <input class="mgj" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mobility_wrap">
+            <input class="mobility" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_33_b">
+          <div class="teeth_svg">
+            <img src="./files/mandibular_b_3.svg" class="flip_horizontal" />
+          </div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mgj_wrap">
+            <input class="mgj" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mobility_wrap">
+            <input class="mobility" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_34_b">
+          <div class="teeth_svg">
+            <img src="./files/mandibular_b_4.svg" class="flip_horizontal" />
+          </div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mgj_wrap">
+            <input class="mgj" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mobility_wrap">
+            <input class="mobility" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_35_b">
+          <div class="teeth_svg">
+            <img src="./files/mandibular_b_5.svg" class="flip_horizontal" />
+          </div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mgj_wrap">
+            <input class="mgj" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mobility_wrap">
+            <input class="mobility" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_36_b">
+          <div class="teeth_svg">
+            <img src="./files/mandibular_b_6.svg" class="flip_horizontal" />
+          </div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mgj_wrap">
+            <input class="mgj" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mobility_wrap">
+            <input class="mobility" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_37_b">
+          <div class="teeth_svg">
+            <img src="./files/mandibular_b_7.svg" class="flip_horizontal" />
+          </div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mgj_wrap">
+            <input class="mgj" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mobility_wrap">
+            <input class="mobility" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+        <div id="teeth_wrap_38_b">
+          <div class="teeth_svg">
+            <img src="./files/mandibular_b_8.svg" class="flip_horizontal" />
+          </div>
+          <div class="pod_wrap">
+            <input class="pod_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="pod_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="margin_wrap">
+            <input class="margin_d" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_c" onkeyup="keyBind(this)" type="tel" />
+            <input class="margin_m" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mgj_wrap">
+            <input class="mgj" onkeyup="keyBind(this)" type="tel" />
+          </div>
+          <div class="mobility_wrap">
+            <input class="mobility" onkeyup="keyBind(this)" type="tel" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
