@@ -92,17 +92,6 @@ h1 {
   top: 0px;
 }
 
-#occlusal > img {
-  height: 120px;
-  position: relative;
-  right: 20px;
-}
-
-#occlusal {
-  text-align: right;
-  padding: 10px 0px;
-}
-
 /* 表 */
 .pod_wrap,
 .margin_wrap,
@@ -124,6 +113,14 @@ h1 {
 .mgj_wrap,
 .mobility_wrap {
   text-align: center;
+}
+
+.occlusal {
+  height: 30px;
+  width: calc(100%+1);
+  border: 1px #000000 solid;
+  margin-bottom: -1px;
+  margin-right: -1px;
 }
 
 .mgj,
@@ -155,15 +152,16 @@ input {
 }
 
 .teeth_svg > img {
-  height: 120px;
   margin: 5px 0px;
 }
 
 /* SVGの横幅に合わせる */
 
 #teeth_wrap_18_b,
-#teeth_wrap_28_b {
-  width: calc(9.76px * 4);
+#teeth_wrap_28_b,
+#teeth_wrap_18_p,
+#teeth_wrap_28_p {
+  width: 40px;
 }
 #teeth_wrap_17_b,
 #teeth_wrap_27_b {
@@ -194,10 +192,6 @@ input {
   width: calc(8.9px * 4);
 }
 
-#teeth_wrap_18_p,
-#teeth_wrap_28_p {
-  width: calc(8.670619px * 4);
-}
 #teeth_wrap_17_p,
 #teeth_wrap_27_p {
   width: calc(11.041983px * 4);
@@ -296,4 +290,9 @@ input {
 /* SVGを反転させる */
 .flip_horizontal {
   transform: scale(-1, 1);
+}
+
+/* test code */
+canvas {
+  border: 1px solid #000000;
 }

@@ -132,3 +132,9 @@ const myChart = new Chart(ctx, {
     },
   },
 });
+
+let canvas = document.getElementById('canvas_maxilla_b');
+let ctx2 = canvas.getContext('2d');
+
+ctx2.fillStyle = 'rgba(128, 128, 128, 0.5)';
+ctx2.fillRect(0, 0, canvas.width, canvas.height);

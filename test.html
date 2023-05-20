@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>sample page</title>
+</head>
+
+<body>
+    <canvas id="canvas" width="400" height="200">
+
+        <script type="text/javascript">
+            let canvas = document.getElementById('canvas');
+            let ctx = canvas.getContext('2d');
+
+            for (let i = 0; i < 20; i++) {
+                let y = i * 10 + 0.5;
+                ctx.beginPath();
+                ctx.moveTo(0, y);
+                ctx.lineTo(400, y);
+                ctx.stroke();
+            }
+
+        </script>
+</body>
+
+</html>
