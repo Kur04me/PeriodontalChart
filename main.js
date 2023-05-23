@@ -2,7 +2,7 @@
  * 明度を切り替えます。
  * @param {object} e - event object
  */
-const trugBrightness = (e) => {
+const toggleBrightness = (e) => {
   const me = e.target;
   const parent = me.closest("div[id^='teeth_wrap']");
   const children = parent.children; //[teeth_wrap, pod_wrap, margin_wrap]
@@ -21,7 +21,7 @@ const trugBrightness = (e) => {
 
 window.addEventListener("load", function () {
   document.querySelectorAll(".teeth_svg > img").forEach((element) => {
-    element.addEventListener("click", trugBrightness, false);
+    element.addEventListener("click", toggleBrightness, false);
   });
 });
 

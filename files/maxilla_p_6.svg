@@ -15,7 +15,30 @@
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
-     id="defs2" />
+     id="defs2">
+    <inkscape:path-effect
+       simplify_just_coalesce="false"
+       simplify_individual_paths="false"
+       helper_size="0"
+       smooth_angles="360"
+       threshold="0.000851064"
+       steps="1"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect1329"
+       effect="simplify" />
+    <inkscape:path-effect
+       simplify_just_coalesce="false"
+       simplify_individual_paths="false"
+       helper_size="0"
+       smooth_angles="360"
+       threshold="0.000851064"
+       steps="1"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect1333"
+       effect="simplify" />
+  </defs>
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -24,7 +47,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="7.9195959"
-     inkscape:cx="14.520943"
+     inkscape:cx="3.4092649"
      inkscape:cy="97.479721"
      inkscape:document-units="px"
      inkscape:current-layer="layer4"
@@ -90,7 +113,7 @@
     <g
        id="g1192"
        style="fill:#ffffff;stroke-width:0.25034;stroke-dasharray:none"
-       transform="matrix(3.9946679,0,0,3.9946679,-185.36488,5.6404156)">
+       transform="matrix(3.9946679,0,0,3.9946679,-185.36488,20.666435)">
       <path
          id="path1117"
          style="fill:#ffffff;stroke:#000000;stroke-width:0.25034;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"

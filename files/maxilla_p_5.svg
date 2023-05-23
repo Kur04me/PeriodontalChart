@@ -38,6 +38,28 @@
        is_visible="true"
        id="path-effect1218"
        effect="simplify" />
+    <inkscape:path-effect
+       simplify_just_coalesce="false"
+       simplify_individual_paths="false"
+       helper_size="0"
+       smooth_angles="360"
+       threshold="0.000851064"
+       steps="1"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect1329"
+       effect="simplify" />
+    <inkscape:path-effect
+       simplify_just_coalesce="false"
+       simplify_individual_paths="false"
+       helper_size="0"
+       smooth_angles="360"
+       threshold="0.000851064"
+       steps="1"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect1333"
+       effect="simplify" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -47,8 +69,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="5.6"
-     inkscape:cx="34.821429"
-     inkscape:cy="33.75"
+     inkscape:cx="19.107143"
+     inkscape:cy="95.357143"
      inkscape:document-units="px"
      inkscape:current-layer="layer4"
      inkscape:document-rotation="0"
@@ -113,7 +135,7 @@
     <g
        id="g1256"
        style="fill:#ffffff;stroke-width:0.262517;stroke-dasharray:none"
-       transform="matrix(3.8103389,0,0,3.8103389,-207.63745,1.2956052)">
+       transform="matrix(3.8103389,0,0,3.8103389,-207.63745,26.831319)">
       <path
          id="path1194"
          style="fill:#ffffff;stroke:#000000;stroke-width:0.262517;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"

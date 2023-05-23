@@ -15,7 +15,30 @@
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
-     id="defs2" />
+     id="defs2">
+    <inkscape:path-effect
+       simplify_just_coalesce="false"
+       simplify_individual_paths="false"
+       helper_size="0"
+       smooth_angles="360"
+       threshold="0.000851064"
+       steps="1"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect1329"
+       effect="simplify" />
+    <inkscape:path-effect
+       simplify_just_coalesce="false"
+       simplify_individual_paths="false"
+       helper_size="0"
+       smooth_angles="360"
+       threshold="0.000851064"
+       steps="1"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect1333"
+       effect="simplify" />
+  </defs>
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -24,8 +47,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="5.6"
-     inkscape:cx="1.0714286"
-     inkscape:cy="-2.1428571"
+     inkscape:cx="-14.642857"
+     inkscape:cy="72.5"
      inkscape:document-units="px"
      inkscape:current-layer="layer4"
      inkscape:document-rotation="0"
@@ -89,7 +112,7 @@
      transform="translate(-89.776521,-81.979941)">
     <g
        id="g1383"
-       transform="matrix(3.9283169,0,0,3.9283169,-281.62248,-1.5749333)"
+       transform="matrix(3.9283169,0,0,3.9283169,-281.62248,19.853638)"
        style="fill:#ffffff;stroke-width:0.254574;stroke-dasharray:none">
       <path
          id="path1341"
